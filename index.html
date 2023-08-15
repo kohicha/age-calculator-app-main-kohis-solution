@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="min-h-screen flex items-center justify-center bg-OffWhite">
+    <div class="flex flex-col bg-white p-16 rounded-l-3xl rounded-tr-3xl rounded-br-[10rem] max-w-5xl">
+      <form name="date-inputs" class="flex flex-col font-PoppinsBold uppercase tracking-widest text-SmokeyGrey ">
+        <div class="flex flex-row pr-24">
+          <label for="input-date" class="flex flex-col mr-8">
+            <span class="error-state mb-2">Day</span>
+            <input type="text" id="day" class="input placeholder:text-SmokeyGrey text-3xl px-6 py-4  mb-2 rounded-lg w-40 border-SmokeyGrey border-opacity-30 border" maxlength="2" placeholder="DD">
+            <span class="empty-field text-red-400 text-xs font-PoppinsItalic hidden">This field is required</span>
+            <span class="invalid-day text-red-400 text-xs font-PoppinsItalic hidden">Must be a valid day</span>
+          </label>
+          <label for="input-date" class="flex flex-col mr-8">
+            <span class="error-state mb-2">Month</span>
+            <input type="text" id="month" class="input placeholder:text-SmokeyGrey text-3xl px-6 py-4  mb-2 rounded-lg w-40 border-SmokeyGrey border-opacity-30 border" maxlength="2" placeholder="MM">
+            <span class="empty-field text-red-400 text-xs font-PoppinsItalic hidden">This field is required</span>
+            <span class="invalid-month text-red-400 text-xs font-PoppinsItalic hidden">Must be a valid month</span>
+          </label>
+          <label for="input-date" class="flex flex-col mr-8">
+            <span class="error-state mb-2">Year</span>
+            <input type="text" id="year" class="input placeholder:text-SmokeyGrey text-3xl px-6 py-4  mb-2 rounded-lg w-40 border-SmokeyGrey border-opacity-30 border" maxlength="4" placeholder="YYYY">
+            <span class="empty-field text-red-400 text-xs font-PoppinsItalic hidden">This field is required</span>
+            <span class="invalid-year text-red-400 text-xs font-PoppinsItalic hidden">Must be a valid year</span>
+          </label>
+        </div>
+        <div class="flex items-center">
+          <hr class="w-full">
+          <button type="submit" class="submit w-28 h-24 rounded-full flex justify-center items-center bg-Purple p-1 hover:bg-black" name="">
+            <img src="assets/images/icon-arrow.svg" alt="" class="w-12">
+          </button>
+        </div>
+      </form>
+      
+        
+      <div class="flex flex-col text-8xl font-PoppinsBlackItalic">
+        <span>
+          <span class="reset year text-Purple">--</span> years
+        </span> 
+        <span>
+          <span class="reset month text-Purple">--</span> months
+        </span>
+        <span>
+          <span class="reset days text-Purple">--</span> days
+        </span>
+      </div>
+      
+    </div>
+    
+  </main>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

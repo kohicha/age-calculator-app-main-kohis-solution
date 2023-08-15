@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: PoppinsBlackItalic;
+    src: url('/design/Poppins-BlackItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url('/design/Poppins-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: PoppinsRegularItalic;
+    src: url('/design/Poppins-Italic.otf') format('opentype');
+}
